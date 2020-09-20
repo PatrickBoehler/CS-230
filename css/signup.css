@@ -28,3 +28,9 @@ width: 50%;
 input {
     margin-bottom: 10px;
 }
+
+.my-auto{
+    background-color: #ffffff;
+    padding: 3px;
+
+}
