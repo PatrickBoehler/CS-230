@@ -56,7 +56,7 @@ if (isset($_SESSION['uid'])) {
         }
     </script> 
 
-<div class= "h-100 center-me text-center">
+<div class= "h-50 center-me text-center">
     <div class="my-auto">
         <form action="includes/upload-helper.php" method="POST" enctype="multipart/form-data">
             <div class="form-group">
