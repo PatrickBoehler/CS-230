@@ -9,7 +9,7 @@ use Aws\Exception\AwsException;
 if(isset($_POST['s3-submit'])){
     $bucketname = "cs-230-s3";
     $file = $_FILES['s3-image'];
-    $filename = $file['name'];
+    $file_name = $file['name'];
     $file_tmp_name = $file['tmp_name'];
     $file_error = $file['error'];
     $file_size = $file['size'];

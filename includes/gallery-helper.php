@@ -6,7 +6,7 @@ define('MB', 1048576);
 if(isset($_POST['gallery-submit'])){
 
     $file = $_FILES['prof-image'];
-    $filename = $file['name'];
+    $file_name = $file['name'];
     $file_tmp_name = $file['tmp_name'];
     $file_error = $file['error'];
     $file_size= $file['size'];
