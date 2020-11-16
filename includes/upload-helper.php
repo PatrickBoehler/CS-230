@@ -42,12 +42,13 @@ if (isset($_POST['prof-submit'])) {
                 header("Location: ../profile.php?error=SQLInjection");
                 exit();
         }else{
-            mysqli_stmt_bind_param($stmt, "sss", $destination, $fname, $email, $username, $hashedPass);
+            mysqli_stmt_bind_param($stmt, "sss", $destination, $bio, $uname);
             mysqli_stmt_execute($stmt);
             mysqli_stmt_store_result($stmt);
 
             move_uploaded_file($file_tmp_name, $destination);
             header("Location: ../profile.php?success=UploadSuccess");
+            exit();
         }
     }
 
