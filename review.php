@@ -74,7 +74,7 @@ $(document).ready(function() {
         for(var i =0; i < max; i++){
             $('.star-rev:eq('+i+')').css('color', 'purple');
         }
-        document.getElementbyId('rating').value = parseInt(localStorage.getItem('rating'));
+        document.getElementById('rating').value = parseInt(localStorage.getItem('rating'));
         console.log(id);
     }
 
@@ -84,7 +84,7 @@ $(document).ready(function() {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function(){
             if(this.readyState == 4 && this.status == 200){
-                    document.getElementId(element).innerHTML = this.responseText;
+                    document.getElementById(element).innerHTML = this.responseText;
             }
         };
         url = prefix+id;

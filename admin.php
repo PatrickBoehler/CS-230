@@ -13,7 +13,7 @@ if (isset($_SESSION['uid'])) {
     <div class="my-auto upload-container">
         <form action="includes/gallery-helper.php" method="POST" enctype="multipart/form-data">
             <div class="form-group">
-            <img src="images/Joe.png" onclick="triggered();" id="gallery-display">
+            <img src="uploads/anon.png" onclick="triggered();" id="gallery-display">
                 <input type="file" name="gallery-image" id="gallery-image" onchange="preview(this)" class="form-control" style="display: none;">
                 <input type="text" name="title" id="title" class="form-control" placeholder="title" required>
             </div>
