@@ -11,8 +11,8 @@ if(isset($_POST['s3-submit'])){
     $file = $_FILES['s3-image'];
     $filename = $file['name'];
     $file_tmp_name = $file['tmp_name'];
-    $filename = $file['error'];
-    $filename = $file['size'];
+    $file_error = $file['error'];
+    $file_size = $file['size'];
 
     $ext = strtolower(pathinfo($file_name, PATHINFO_EXTENSION));
 
@@ -22,8 +22,8 @@ if(isset($_POST['s3-submit'])){
             array('region' => 'us-east-1',
             'version' => 'latest',
             'credentials' => array(
-                'key' => "",
-                'secret' => ""
+                'key' => "AKIAREI2HNDE6YVCIK4A",
+                'secret' => "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"
             ))
 
         );

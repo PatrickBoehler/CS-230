@@ -12,8 +12,8 @@ if (isset($_POST['prof-submit'])) {
     $file = $_FILES['prof-image'];
     $filename = $file['name'];
     $file_tmp_name = $file['tmp_name'];
-    $filename = $file['error'];
-    $filename = $file['size'];
+    $file_error = $file['error'];
+    $file_size= $file['size'];
 
     $bio = $_POST['bio'];
 
