@@ -5,7 +5,7 @@ define('MB', 1048576);
 
 if(isset($_POST['gallery-submit'])){
 
-    $file = $_FILES['prof-image'];
+    $file = $_FILES['gallery-image'];
     $file_name = $file['name'];
     $file_tmp_name = $file['tmp_name'];
     $file_error = $file['error'];
@@ -39,12 +39,13 @@ if(isset($_POST['gallery-submit'])){
                 header("Location: ../login.php?error=SQLInjection");
                 exit();
         }else{
-            mysqli_stmt_bind_param($stmt, "sss", $title, $descript,  $new_name );
+            mysqli_stmt_bind_param($stmt, "sss", $title, $descript, $new_name );
             mysqli_stmt_execute($stmt);
             mysqli_stmt_store_result($stmt);
 
             move_uploaded_file($file_tmp_name, $destination);
             header("Location: ../admin.php?success=UploadSuccess");
+            exit();
         }
     }
 }
