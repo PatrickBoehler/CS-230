@@ -3,6 +3,7 @@
 include 'dbhandler.php';
 
 $id = $_GET['id'];
+
 $sqlAvg = "SELECT AVG(rating_num) AS AVGRATE FROM reviews WHERE item_id='$id' ORDER BY rev_date DESC";
 $sqlCount = "SELECT count(rating_num) AS Total FROM reviews WHERE item_id='$id'";
 

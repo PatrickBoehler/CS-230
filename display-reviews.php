@@ -13,7 +13,7 @@ if (!$conn) {
 }
 
 $item_id = $GET['id'];
-$sql = "SELECT * FROM reviews WHERE item_id= '$item_id' LIMIT 4";
+$sql = "SELECT * FROM reviews WHERE item_id= '$item_id'";
 
 $result = mysqli_query($conn, $sql);
 
