@@ -1,7 +1,7 @@
 .body {
 		text-align: center;
 		color: #FFFFFF;
-		background-color:gray ;
+		background-color:gray !important;
 		font-family: Verdana, Geneva, sans-serif;
 	}
 	.about{
