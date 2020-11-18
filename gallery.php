@@ -3,7 +3,7 @@ require 'includes/header.php';
 ?>
 
 <main>
-<style>@
+<style>
 body{
 
     background-color: slategray;
