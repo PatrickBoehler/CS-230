@@ -2,6 +2,15 @@
 require 'includes/header.php'
 ?>
 <main>
+
+<style>
+body{
+
+	background-color: gray;
+}
+
+</style>
+
 <link rel="stylesheet" href="css/about.css"></link>
 
 	<div class= "about">
