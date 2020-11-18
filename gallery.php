@@ -3,6 +3,13 @@ require 'includes/header.php';
 ?>
 
 <main>
+<style>@
+body{
+
+    background-color: slategray;
+}
+</style>
+
 <link rel="stylesheet" href="css/gallery.css">
     <h1>Gallery</h1>
     <div class="gallery-container" >
