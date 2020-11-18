@@ -6,7 +6,7 @@ require 'includes/header.php'
 <style>
 body{
 
-	background-color: gray;
+	background-color: slategray;
 }
 
 </style>
