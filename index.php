@@ -12,7 +12,7 @@ require 'includes/header.php'
 	<div class="row">
 		<div class ="column">
 			<div class="card">
-				<img src="images/joe.png" alt="Joe Swanson">
+				<img src="images/Joe.png" alt="Joe Swanson">
 				<div class="container">
 					<h2>Animated Films</h2>
 					<p>Joe Swanson</p>
